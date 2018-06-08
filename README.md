@@ -25,17 +25,18 @@ View a demo of Mongo Scraper and how it interacts with a Mongo database [here](h
 
 ### Installation
 
-To install the application, open the terminal or command prompt and follow the instructions below:
+To install the application, open the terminal or command prompt and run the commands below:
 
 ``` Javascript
 	git clone git@github.com:fireatwillrva/MongoScraper.git
 	cd MongoScraper
-	npm install
+    npm install
+    mongod
 ```
 	
 ### Running Locally
 
-To run the application locally and access it in your browser, open [server.js](./server.js) in the terminal and run the command below.
+To run the application locally and access it in your browser, open [server.js](./server.js) in a separate terminal window than the one running *mongod* and run the command below.
 
 ``` Javascript
 	node server.js
