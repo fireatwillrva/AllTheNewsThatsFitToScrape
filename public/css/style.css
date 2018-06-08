@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Moon";
+  src: url("../fonts/Moon2.0-Light.otf");
+}
+
+body {
+  background: linear-gradient(#7d7e7d 0%,#0e0e0e 100%);
+}
+
+h1 {
+  font-family: 'Moon';
+}
+#articles p:hover {
+  background-color: #F8F8F8;
+}
+#wrapper {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+  }
+  #articles {
+    display: inline-block;
+    overflow: auto;
+    width: 60%;
+    height: 700px;
+    border-right: 1px grey solid;
+    padding-left: 1%;
+  }
+  #notes {
+    float: right;
+    width: 30%;
+    padding-right: 10vh;
+  }
+  #scrape {
+      color: white;
+  }
+  textarea, input {
+    display: block;
+    width: 100%;
+    background-color: #FCF5C7;
+  }
+  input {
+    height: 36px;
+    font-size: 24px;
+  }
+  textarea {
+    height: 200px;
+    font-size: 18px;
+  }
