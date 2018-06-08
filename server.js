@@ -34,7 +34,8 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/MongoScraper";
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
 mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI);
+// mongoose.connect(MONGODB_URI);
+mongoose.connect('mongodb://fireatwillrva:w00tcore@ds053156.mlab.com:53156/mongo-scraper');
 
 // =====================================================
 // Routes
