@@ -77,7 +77,7 @@ $(document).on("click", "#savenote", function() {
       // Log the response
       console.log(data);
       // Empty the notes section
-      $("#notes").empty().append('<h5>Note saved! Click on the article to view your note.</h5>');
+      $("#notes").empty().append('<div class="alert alert-primary" role="alert">Note saved! Click on the article to view your note.</div>');
     });
 
   // Also, remove the values entered in the input and textarea for note entry

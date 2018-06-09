@@ -29,8 +29,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 // If deployed, use the deployed database. Otherwise use the local mongoScraper database
-var MONGODB_URI = 'mongodb://fireatwillrva:w00tcore@ds053156.mlab.com:53156/mongo-scraper' || process.env.MONGODB_URI || 
-"mongodb://localhost/MongoScraper";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/MongoScraper" || 'mongodb://fireatwillrva:w00tcore@ds053156.mlab.com:53156/mongo-scraper';
 
 
 // Connect to the Mongo DB

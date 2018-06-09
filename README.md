@@ -21,7 +21,7 @@ Mongo Scraper is an app that scrapes articles from the New York Times website an
 ## Demo
 
 Check out the application [here](https://newyorktimes-mongo-scraper.herokuapp.com/) on Heroku.
-View a demo of Mongo Scraper and how it interacts with a Mongo database [here](https://youtu.be/hYCdYJ2912w) on YouTube.
+View a demo of Mongo Scraper and how it interacts with a Mongo database [here](https://youtu.be/jfDoEd_eDNQ) on YouTube.
 
 ### Installation
 
