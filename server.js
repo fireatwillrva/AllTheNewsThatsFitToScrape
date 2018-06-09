@@ -30,14 +30,13 @@ app.use(express.static("public"));
 
 // If deployed, use the deployed database. Otherwise use the local mongoScraper database
 //---------------------------------------------------------
-var databaseUri = 'mongodb://fireatwillrva:w00tcore@ds053156.mlab.com:53156/mongo-scraper';
-// "mongodb://localhost/MongoScraper";
+var databaseUri = "mongodb://localhost/MongoScraper";
 //---------------------------------------------------------
 mongoose.Promise = Promise;
 mongoose.connect(process.env.MONGODB_URI || databaseUri, {
     useMongoClient: true
 });
-// 'mongodb://fireatwillrva:w00tcore@ds053156.mlab.com:53156/mongo-scraper';
+// || 'mongodb://fireatwillrva:w00tcore@ds053156.mlab.com:53156/mongo-scraper';
 
 // =====================================================
 // Routes
