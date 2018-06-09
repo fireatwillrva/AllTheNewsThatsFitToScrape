@@ -28,12 +28,12 @@ app.use(bodyParser.urlencoded({
 // Use express.static to serve the public folder as a static directory
 app.use(express.static("public"));
 
-// If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/MongoScraper";
+// If deployed, use the deployed database. Otherwise use the local mongoScraper database
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/MongoScraper" || 
+'mongodb://fireatwillrva:w00tcore@ds053156.mlab.com:53156/mongo-scraper';
 
-// Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
-mongoose.connect(MONGODB_URI || 'mongodb://fireatwillrva:w00tcore@ds053156.mlab.com:53156/mongo-scraper');
+mongoose.connect(MONGODB_URI);
 
 // =====================================================
 // Routes
