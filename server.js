@@ -32,7 +32,7 @@ app.use(express.static("public"));
 //---------------------------------------------------------
 var databaseUri = "mongodb://localhost/MongoScraper";
 //---------------------------------------------------------
-mongoose.Promise = Promise;
+
 mongoose.connect(process.env.MONGODB_URI || databaseUri, {
     useMongoClient: true
 });
