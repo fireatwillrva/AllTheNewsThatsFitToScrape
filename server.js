@@ -33,9 +33,7 @@ app.use(express.static("public"));
 var databaseUri = "mongodb://localhost/MongoScraper";
 //---------------------------------------------------------
 
-mongoose.connect(process.env.MONGODB_URI || databaseUri, {
-    useMongoClient: true
-});
+mongoose.connect(process.env.MONGODB_URI || databaseUri, () => console.log(process.env));
 // || 'mongodb://fireatwillrva:w00tcore@ds053156.mlab.com:53156/mongo-scraper';
 
 // =====================================================
@@ -67,7 +65,8 @@ app.get("/scrape", function (req, res) {
         })
         .catch(function (err) {
           // If an error occurred, send it to the client
-          return res.json(err);
+          //return res.json(err);
+          console.log('error: ' + err.message);
         });
     });
 
